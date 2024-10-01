@@ -1,45 +1,43 @@
-%%ZJUT课程论文模板
-%%作者：GDY
-%%License：Apache-2.0 license
-%%GitHub:
-%https://github.com/ohhhyeahhh/ZJUT_Report_LaTeX_Template
+%% ZJUT Course Report Template
+%% Author: GDY
+%% License: Apache-2.0 license
+%% GitHub:
+% https://github.com/ohhhyeahhh/ZJUT_Report_LaTeX_Template
 
-%%最后更改于2024/3/15
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%BUAA课程论文模板
-%%作者：zzdyyy
-%%License：Apache-2.0 license
-
-%%最后更改于2024/3/4
+%% Last updated on 2024/3/15
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%RUC课程论文模板
-%%作者：xxmy7
-%%License：Apache-2.0 license
-%%GitHub：https://github.com/xxmy7/RUC_Report_Latex_Template
-%%Overleaf：https://www.overleaf.com/latex/templates/ruc-report-latex-template/hhwhvvwczbnm
+%% BUAA Course Report Template
+%% Author: zzdyyy
+%% License: Apache-2.0 license
 
-%%最后更改于2023/10/20
+%% Last updated on 2024/3/4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RUC Course Report Template
+%% Author: xxmy7
+%% License: Apache-2.0 license
+%% GitHub: https://github.com/xxmy7/RUC_Report_Latex_Template
+%% Overleaf: https://www.overleaf.com/latex/templates/ruc-report-latex-template/hhwhvvwczbnm
+
+%% Last updated on 2023/10/20
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%在"中国科学院大学课程论文模板"基础上修改而来
-%%原作者：jweihe
-%%GitHub：https://github.com/jweihe/UCAS_Latex_Template
-%%Overleaf：https://www.overleaf.com/latex/templates/zhong-guo-ke-xue-yuan-da-xue-ke-cheng-lun-wen-mo-ban/nphpxhhqvnds
+%% Modified from "University of Chinese Academy of Sciences Course Report Template"
+%% Original Author: jweihe
+%% GitHub: https://github.com/jweihe/UCAS_Latex_Template
+%% Overleaf: https://www.overleaf.com/latex/templates/zhong-guo-ke-xue-yuan-da-xue-ke-cheng-lun-wen-mo-ban/nphpxhhqvnds
 
-%%在"北京大学课程论文模板"基础上修改而来
-%%原作者：Shawn Wang
-%%Overleaf地址：https://www.overleaf.com/latex/templates/bei-jing-da-xue-ke-cheng-lun-wen-mo-ban/yntmqcktrzfh
-
-
+%% Modified from "Peking University Course Report Template"
+%% Original Author: Shawn Wang
+%% Overleaf: https://www.overleaf.com/latex/templates/bei-jing-da-xue-ke-cheng-lun-wen-mo-ban/yntmqcktrzfh
 
 \ProvidesPackage{ZJUTReport}
 
-%%页边距
+%% Page margins
 \RequirePackage[left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm]{geometry}
 
-%%一些必要的宏包
+%% Some essential packages
 \RequirePackage[unicode=true,colorlinks,urlcolor=blue,linkcolor=black,bookmarksnumbered=blue]{hyperref}
 \RequirePackage{latexsym,amssymb,amsmath,amsbsy,amsopn,amstext,amsthm,amsxtra,color,bm,calc,ifpdf}
 \RequirePackage{graphicx}
@@ -60,21 +58,21 @@
 \RequirePackage{fontawesome}
 \RequirePackage{caption}
 \RequirePackage{gbt7714}
-%% 去掉图标标题中的冒号，将分隔变为空格
-% 或者是：
-% \captionsetup{labelformat=default,labelsep=space} %去除冒号
-\captionsetup[table]{labelsep=space} % 表
-\captionsetup[figure]{labelsep=space} % 图  
+%% Remove the colon in figure/table captions, change separator to space
+% Alternatively:
+% \captionsetup{labelformat=default,labelsep=space} % Remove colon
+\captionsetup[table]{labelsep=space} % Table
+\captionsetup[figure]{labelsep=space} % Figure  
 
-%% 更改摘要二字的样式
-\renewcommand{\abstractname}{\textbf{\large {摘\quad 要}}} 
+%% Change the style of the abstract title
+\renewcommand{\abstractname}{\textbf{\large {Abstract}}} 
 
-%可固定下划线长度
+% Fixed underline length
 \makeatletter
 \newcommand\dlmu[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
 \makeatother
 
-%更改主题
+% Change theme
 % \hypersetup{
 %     colorlinks=true,
 %     linkcolor=blue,
@@ -83,45 +81,45 @@
 %     citecolor=orange,
 % }
 
-%%对一些autoref的中文引用名作修改
-\def\equationautorefname{式}
-\def\footnoteautorefname{脚注}
-\def\itemautorefname{项}
-\def\figureautorefname{图}
-\def\tableautorefname{表}
-\def\partautorefname{篇}
-\def\appendixautorefname{附录}
-\def\chapterautorefname{章}
-\def\sectionautorefname{节}
-\def\subsectionautorefname{小小节}
-\def\subsubsectionautorefname{subsubsection}
-\def\paragraphautorefname{段落}
-\def\subparagraphautorefname{子段落}
-\def\FancyVerbLineautorefname{行}
-\def\theoremautorefname{定理}
+%% Modify names used by autoref for references
+\def\equationautorefname{Equation}
+\def\footnoteautorefname{Footnote}
+\def\itemautorefname{Item}
+\def\figureautorefname{Figure}
+\def\tableautorefname{Table}
+\def\partautorefname{Part}
+\def\appendixautorefname{Appendix}
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+\def\subsubsectionautorefname{Subsubsection}
+\def\paragraphautorefname{Paragraph}
+\def\subparagraphautorefname{Subparagraph}
+\def\FancyVerbLineautorefname{Line}
+\def\theoremautorefname{Theorem}
 
-\newtheorem{Theorem}{定理}[section]
-\newtheorem{Lemma}[Theorem]{引理}
-\newtheorem{Corollary}[Theorem]{推论}
-\newtheorem{Proposition}[Theorem]{命题}
-\newtheorem{Definition}[Theorem]{定义}
-\newtheorem{Example}[Theorem]{例}
+\newtheorem{Theorem}{Theorem}[section]
+\newtheorem{Lemma}[Theorem]{Lemma}
+\newtheorem{Corollary}[Theorem]{Corollary}
+\newtheorem{Proposition}[Theorem]{Proposition}
+\newtheorem{Definition}[Theorem]{Definition}
+\newtheorem{Example}[Theorem]{Example}
 
-%%参考文献设置
+%% Reference settings
 \newcommand{\reference}{
-%\nocite{*}   %打开此选项会列出bib里面的所有参考文献
-\bibliographystyle{gbt7714-numerical} %规定了参考文献的格式
-\begin{center} %居中
-	\bibliography{reference} %调出LaTeX生成参考文献列表
+%\nocite{*}   % Uncomment to list all entries in the .bib file
+\bibliographystyle{gbt7714-numerical} % Specifies the bibliography style
+\begin{center} % Centered
+	\bibliography{reference} % Generates the bibliography
 \end{center}
 }
 
-%%文本框设置
+%% Text box settings
 \newcommand{\tbox}[1]{
 \begin{center}
-\begin{tcolorbox}[colback=gray!10, %gray background
-                  colframe=black, % black frame colour
-                  width=8cm, % Use 8cm total width,
+\begin{tcolorbox}[colback=gray!10, % Gray background
+                  colframe=black, % Black frame color
+                  width=8cm, % Use 8cm total width
                   arc=1mm, auto outer arc,
                   boxrule=0.5pt,
                  ]
@@ -130,14 +128,14 @@
 \end{center}
 }
 
-%%页眉设置
+%% Page header settings
 \pagestyle{fancy}
-\fancyhead[L]{} %%留空则不显示
-\fancyhead[C]{\fangsong 浙江工业大学XXX课程报告} %%留空则不显示
-\fancyhead[R]{} %%留空则不显示
+\fancyhead[L]{} %% Leave empty to hide
+\fancyhead[C]{\fangsong Zhejiang University of Technology XXX Course Report} %% Centered header
+\fancyhead[R]{} %% Leave empty to hide
 \setlength{\headheight}{15pt}
 
-%%在这里可更改封面logo
+%% Change the cover logo here
 \newcommand{\cover}{
 \begin{figure}
 	\centering
@@ -149,7 +147,7 @@
 %     \subfigure{
 %     \includegraphics[width=0.22\textwidth]{figures/zjutlogo.eps}
 %     }
-%  %   \quad % 添加空白间距
+%  %   \quad % Add horizontal spacing
 %     \subfigure{
 %     \includegraphics[width=0.74\textwidth]{figures/zjutname.eps}
 %     }
@@ -157,7 +155,7 @@
 \maketitle
 }
 
-% 定义可能使用到的颜色
+% Define colors that may be used
 \definecolor{CPPLight}  {HTML} {686868}
 \definecolor{CPPSteel}  {HTML} {888888}
 \definecolor{CPPDark}   {HTML} {262626}
@@ -172,40 +170,40 @@
 \definecolor{bgcolor}{rgb}{0.92,0.92,0.92}
 
 \lstset{
-    breaklines = true,                                   % 自动将长的代码行换行排版
-    extendedchars=false,                                 % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
+    breaklines = true,                                   % Automatically wrap long lines
+    extendedchars=false,                                 % Fix issues when code spans pages
     columns=fixed,       
-    numbers=left,                                        % 在左侧显示行号
+    numbers=left,                                        % Show line numbers on the left
     basicstyle=\zihao{-5}\ttfamily,
     numberstyle=\small,
-    frame=none,                                          % 不显示背景边框
-    % backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
-    keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
-    numberstyle=\footnotesize\color{darkgray},           % 设定行号格式
-    commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
-    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
-    showstringspaces=false,                              % 不显示字符串中的空格
-    % frame=leftline,topline,rightline, bottomline         %分别对应只在左侧，上方，右侧，下方有竖线
-    frame=shadowbox,                                     % 设置阴影
-    rulesepcolor=\color{red!20!green!20!blue!20},        % 阴影颜色
+    frame=none,                                          % Do not display background frame
+    % backgroundcolor=\color[RGB]{245,245,244},            % Set background color
+    keywordstyle=\color[RGB]{40,40,255},                 % Set keyword color
+    numberstyle=\footnotesize\color{darkgray},           % Set line number format
+    commentstyle=\it\color[RGB]{0,96,96},                % Set comment style
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % Set string style
+    showstringspaces=false,                              % Do not display spaces in strings
+    % frame=leftline,topline,rightline, bottomline         % Lines on specified sides
+    frame=shadowbox,                                     % Set shadow frame
+    rulesepcolor=\color{red!20!green!20!blue!20},        % Shadow color
     basewidth=0.6em,
 }
 
 \lstdefinestyle{CPP}{
-    language=c++,                                        % 设置语言
-    morekeywords={alignas,continute,friend,register,true,alignof,decltype,goto,
-    reinterpret_cast,try,asm,defult,if,return,typedef,auto,delete,inline,short,
+    language=c++,                                        % Set language
+    morekeywords={alignas,continue,friend,register,true,alignof,decltype,goto,
+    reinterpret_cast,try,asm,default,if,return,typedef,auto,delete,inline,short,
     typeid,bool,do,int,signed,typename,break,double,long,sizeof,union,case,
     dynamic_cast,mutable,static,unsigned,catch,else,namespace,static_assert,using,
-    char,enum,new,static_cast,virtual,char16_t,char32_t,explict,noexcept,struct,
+    char,enum,new,static_cast,virtual,char16_t,char32_t,explicit,noexcept,struct,
     void,export,nullptr,switch,volatile,class,extern,operator,template,wchar_t,
     const,false,private,this,while,constexpr,float,protected,thread_local,
     const_cast,for,public,throw,std},
     emph={map,set,multimap,multiset,unordered_map,unordered_set,
     unordered_multiset,unordered_multimap,vector,string,list,deque,
-    array,stack,forwared_list,iostream,memory,shared_ptr,unique_ptr,
+    array,stack,forward_list,iostream,memory,shared_ptr,unique_ptr,
     random,bitset,ostream,istream,cout,cin,endl,move,default_random_engine,
-    uniform_int_distribution,iterator,algorithm,functional,bing,numeric,},
+    uniform_int_distribution,iterator,algorithm,functional,bind,numeric,},
     emphstyle=\color{CPPViolet}, 
 }
 
